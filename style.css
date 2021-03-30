@@ -355,6 +355,14 @@ footer ul li {
         font-size: 0.8em;
     }
 
+    i.hero-marketing-bar{
+        position: static;
+    }
+
+    .hero-image img{
+        width: 100%;
+    }
+
     nav ul{
         display: none;
         position: absolute;
