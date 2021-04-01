@@ -127,7 +127,7 @@ nav ul li a{
 
 /*Marketing boxes styling*/
 .marketing-boxes{
-    margin-bottom: 30px; /*added white spacebefore abou us section */
+    margin-bottom: 10px; /*added white spacebefore abou us section */
 }
 
 .marketing-boxes .flex{ /*already flexed about*/
