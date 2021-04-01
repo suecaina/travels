@@ -108,13 +108,12 @@ nav ul li a{
 
 .hero-marketing-bar{
     position: absolute;
-    color: black;
-    bottom: 0;
     z-index: 2;
-    background-color: rgba(225, 225, 225, 0.80);
+    background-color: rgba(255, 255, 255, 0.65);
+    bottom: 0;
     left: 0;
     width: 100%;
-    padding: 30px 0;  
+    padding: 30px 0;
 }
 
 .hero-marketing-bar h1,
@@ -261,25 +260,29 @@ padding: 75px 0 60px;
 /*Footer syle section*/
 footer{
     background-color: #71c1f7;
-    padding: 75px 10px 60px;
+    padding: 75px 0px 60px;
     color: #fff;
 }
 
 footer .flex{
     max-width: 900px; /*same as flex container will line up accurately*/
     justify-content: space-between;
+    
 }
 
 footer ul{
     list-style-type: none; /*gets rid of bullet points*/
     margin: 0;
     padding: 0;
+    
 }
 
 footer ul li {
     display: inline-block;
     margin-left: 20px;
 }
+
+
 
 /*Start media queries here*/
 @media (max-width: 767px){  /*767px or smaller*/
@@ -297,7 +300,21 @@ footer ul li {
 
     .flex{
         display: block; /*not using flex - will stack ontop of each other at this size*/
+        text-align: center;
     }
+
+    .hero-marketing-bar{
+        position: absolute;
+        color: black;
+        bottom: 0;
+        z-index: 2;
+        background-color: rgba(225, 225, 225, 0.80);
+        left: 0;
+        width: 100%;
+        padding: 30px 0;  
+    }
+    
+    
 
     .box{
         width: 100%;
@@ -326,10 +343,6 @@ footer ul li {
         padding-top: 90px;
     }
 
-    #wrapper > footer{
-        text-align: center;
-    }
-
     footer ul{
         margin-top: 30px;
     }
@@ -339,6 +352,10 @@ footer ul li {
 @media (min-width: 651px){
     nav ul{
         display: block!important;
+    }
+
+    .hero-image{
+        margin-bottom: 10px;
     }
 }
 
@@ -361,6 +378,10 @@ footer ul li {
 
     .hero-image img{
         width: 100%;
+    }
+
+    .hero-image{
+        margin-bottom: 10px;
     }
 
     nav ul{
@@ -415,8 +436,12 @@ footer ul li {
         width: 100%;
     }
 
+    .marketing-boxes{
+        margin-bottom: 0px; /*added white spacebefore abou us section */
+    }
+
     .map{
-        width: 100%;
+        width: 20%;
         text-align: center;
     }
 
@@ -424,5 +449,10 @@ footer ul li {
         width: 300px;
         height: 400px;
         padding-left: 10px;
+    }  
+
+    .marketing-boxes{
+        margin-bottom: 0px; /*added white spacebefore abou us section */
     }
+
 }
